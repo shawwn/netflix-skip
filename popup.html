@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title></title>
+    <link rel="stylesheet" href="./popup.css" />
+    <script src="./js/popup.js"></script>
+
+    <script src="./lib/jquery-3.3.1.min.js"></script>
+    <script src="./lib/jquery-ui-1.12.1/jquery-ui.min.js"></script>
+    <link
+      rel="stylesheet"
+      href="./lib/jquery-ui-1.12.1/jquery-ui.theme.min.css"
+    />
+    <link rel="stylesheet" href="./lib/jquery-ui-1.12.1/jquery-ui.min.css" />
+  </head>
+
+  <body>
+    <div class="title">
+      <img src="./icon.png" alt="icon" />
+      <span>Netflix AutoSkip</span>
+    </div>
+
+    <div class="card">
+      <div class="card-body">
+        <p class="card-title">Skip Options.</p>
+        <p class="card-text">Check the item you want to skip.</p>
+
+        <div class="option-list">
+          <div class="option">
+            <label class="option-name" for="intro"
+              >Intro & Recap
+              <span
+                class="ps"
+                title='"Recap" at the intro position will be skip with "Intro".'
+                >(?)</span
+              >
+            </label>
+            <label class="switch">
+              <input type="checkbox" checked id="intro" />
+              <span class="slider round"></span>
+            </label>
+          </div>
+
+          <div class="option">
+            <label class="option-name" for="nextEpisode"
+              >Next Episode Countdown</label
+            >
+            <label class="switch">
+              <input type="checkbox" checked id="nextEpisode" />
+              <span class="slider round"></span>
+            </label>
+          </div>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>

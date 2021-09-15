@@ -1,0 +1,22 @@
+{
+   "browser_action": {
+      "default_icon": "icon.png",
+      "default_popup": "popup.html"
+   },
+   "content_scripts": [ {
+      "js": [ "js/watch.js" ],
+      "matches": [ "*://*.netflix.com/*" ]
+   } ],
+   "content_security_policy": "script-src 'self' https://ssl.google-analytics.com; object-src 'self'",
+   "description": "In Netflix, Automatically skip the intro & Play the next episode without waiting",
+   "icons": {
+      "128": "icon.png"
+   },
+   "key": "MIIBIjANBgkqhkiG9w0BAQEFAAOCAQ8AMIIBCgKCAQEAirv9fJCt8ZPSyXPR86jclVJf9/tX3CLdWbBoF6ublNl7ARpjRTN4jIl8N4wNUF5FJxgUJxxrq1y0BCYQM4/5ZvHqjfGuTH3KLngw1rvGE0js5folTFuNnp4mDiYu18gP7EbzpL5N8d9caJMNSxzaTOz7SFT6GVievEuaJ/xFMfyvQM73FbgG0pVgCNbo3bcwtYzmO68fLq4JZjE8Nm9IcAE2GnvvGfjlErbDChWUykNN6nXuGynK5TmAvx4IhL5nIrKYY2LYpAaztq1aiz09hFJVaOSo8cgVJJtSSZYYJc3/QSpSTyQpJrIJZvPOyq+vQMQ4bPZLTGgtq7kpyF+MQQIDAQAB",
+   "manifest_version": 2,
+   "name": "Netflix AutoSkip: Skip intro and outro",
+   "permissions": [ "*://*.netflix.com/*", "storage" ],
+   "short_name": "Netflix AutoSkip",
+   "update_url": "https://clients2.google.com/service/update2/crx",
+   "version": "3.4"
+}
